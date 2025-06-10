@@ -182,3 +182,23 @@ Don't hesitate to get in touch if you have any questions or need any help!
 [shrinkwrap]: https://docs.npmjs.com/cli/shrinkwrap
 [hxd]: https://github.com/jhermsmeier/hxd
 [Xcode Command Line Tools]: https://developer.apple.com/library/content/technotes/tn2339/_index.html
+
+# Contributing Guide updated for best practices
+# See docs/CONTRIBUTING.md for full details
+
+## Best Practices
+
+- Use pre-commit hooks for code style and linting
+- Use Poetry for dependency management
+- Run tests and checks via Makefile
+- Follow commit guidelines in docs/COMMIT-GUIDELINES.md
+
+## Quickstart
+
+```bash
+poetry install
+pre-commit install
+make test
+```
+
+See [docs/01-Project_Overview_and_Best_Practices.md](01-Project_Overview_and_Best_Practices.md) for more.

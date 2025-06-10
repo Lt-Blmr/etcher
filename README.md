@@ -99,6 +99,30 @@ choco install etcher
 choco uninstall etcher
 ```
 
+## Best Practices
+
+- Modular code in `src/`, tests in `tests/`
+- Use Poetry and `pyproject.toml` for dependencies
+- Enforce code style with Black, isort, flake8, mypy
+- Use pre-commit hooks (`.pre-commit-config.yaml`)
+- Run workflows via `Makefile`
+- See `docs/` for architecture, contributing, and more
+
+## Quickstart
+
+```bash
+# Install dependencies
+poetry install
+
+# Run pre-commit checks
+pre-commit run --all-files
+
+# Run tests
+make test
+```
+
+For more, see [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md).
+
 ## Support
 
 If you're having any problem, please [raise an issue][newissue] on GitHub, and
